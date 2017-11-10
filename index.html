@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="sketch.js"></script>
+<form>
+  <div class="wrapper">
+     <h1>Hangman</h1>
+      <h2>HANGMAN</h2>
+      <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
+  </div>
+  <div class="wrapper">
+      <div id="buttons">
+      </div>
+      <p id="catagoryName"></p>
+      <div id="hold">
+      </div>
+      <p id="mylives"></p>
+      <p id="clue">Clue -</p>
+       <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+      <div class="container">
+        <button id="hint">Hint</button>
+        <button id="reset">Play again</button>
+      </div>
+  </div>
+</form>
+</html>
