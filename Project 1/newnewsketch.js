@@ -5,21 +5,11 @@ var timeOut;
 
 // hangman Object
 var hangman = {
-    words: ['Bearcat',
-        'Armadillo',
-        'Porcupine',
-        'Peacock',
-        'Alligator',
-        'Nightingale',
-        'Woodchuck',
-        'Woodpecker',
-        'Elephant',
-        'Antelope',
-        'Pronghorn',
-        'Penguin',
-        'Grasshopper',
-        'Hummingbird',
-        'Mosquito',
+    words: ['dog',
+        'elephant',
+        'cat',
+        'bee',
+        'tiger'
     ],
     letters: ['A', 'B', 'C', 'D', 'E',
         'F', 'G', 'H', 'I', 'J', 'K',
@@ -50,7 +40,7 @@ var hangman = {
         this.computerWordLength = this.calculateWordLength();
 
         var initialWordToPrint = this.createInitialWordToPrint();
-        this.printWord(initialWordToPrint);
+        this.printWord(initialWorsdToPrint);
 
         // set elements
         document.querySelector("#loadingMessage").innerHTML = "";

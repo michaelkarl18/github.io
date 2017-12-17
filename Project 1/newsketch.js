@@ -2,7 +2,7 @@ var words = ["cat","dog","bird","elephant"];
 var randomNumber = Math.floor[Math.random()*words.length];
 var randomWord = words[randomNumber]
 var wordSplit = randomWord.split("");
-var guesses[]
+var guesses=[];
 var guessesRight = [];
 var guessesWrong = [];
 var underScore = [];
@@ -32,13 +32,13 @@ function generateUnderScores(){
 
 function guess(){
   while (numGuessesWrong == 0){
-    userGuess = prompt("Enter a letter.")
+    var userGuess = prompt("Enter a letter.")
     while (guesses.indexOf(userGuess.toLowerCase()) >= 0) {
      alert("You have already guessed that letter. Try again");
      userGuess = prompt("What letter would you like to guess?");
  }
 
- for (x = 0; x < wordSplit.length; x++) {
+    for (x = 0; x < wordSplit.length; x++) {
 
      if (userGuess == wordSplit[x]) {
          guesses.push(userGuess);
